@@ -51,10 +51,9 @@ Route::delete('products/{id}', [ProductController::class, 'destroy']);
 Route::get('/home', [HomeController::class, 'showHome']);
 Route::get('/home/{id}', [HomeController::class, 'detail']);
 
-Route::post('/cart', [CartController::class, 'addToCart']);
-Route::get('/cart', [CartController::class, 'showCart']);
-Route::delete('cart/{id}', [CartController::class, 'destroy']);
-
+// Route::post('/cart', [CartController::class, 'addToCart']);
+// Route::get('/cart', [CartController::class, 'showCart']);
+// Route::delete('cart/{id}', [CartController::class, 'destroy']);
 
 Route::get('/department', [DepartmentController::class, 'index']);
 Route::get('/department/create', [DepartmentController::class, 'create']);
